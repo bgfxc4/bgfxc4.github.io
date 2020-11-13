@@ -1,0 +1,104 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #464646;
+}
+
+canvas {
+	display: block;
+}
+
+#logo_top_img {
+	position: fixed;
+	scale: 0.25;
+	left: -260px;
+	top: -40px;
+}
+
+#bottom_tabs {
+	z-index: 1;
+	position: fixed;
+	top: 80%;
+	left: 50px;
+	right: 0;
+	height: 3%;
+}
+
+.tab_button { 
+	overflow: hidden;
+	border: 0px solid #ccc;
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+	width: 70px;
+	height: 100%;
+	border-radius: 0;
+}
+
+.tab_button_left {	
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.tab_button_right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.active_tab {
+	background-color: #cacaca;
+}
+
+#input_div {
+	position: fixed;
+	top: 80%;
+	right: 0;
+	left: 0;
+	height: 30%;
+	border-radius: 20px;
+	background-color: #666666;
+	z-index: 0;
+}
+
+#hsk_list {
+	margin-left: 10px;
+}
+
+input {
+	align-self: center;
+	display: inline-block;
+}
+
+.input_item_title {
+	margin-top: 50px;
+	color: white;
+	display: block;
+}
+
+.input_item_div {
+	display: inline-block;
+}
+
+.hidden_div {
+	display: none;
+}
+
+#prices_div {
+	position: fixed;
+	top: 70%;
+	right: 0;
+	left: 0;
+	height: 50%;
+	border-radius: 20px;
+	background-color: #666666;
+	z-index: 0;
+}
+
+#version {
+	color: #868686;
+	position: absolute;
+	right: 5px;
+	bottom: 0px;
+	line-height: 0;
+}
+

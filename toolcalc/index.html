@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tool calculator</title>
+		<meta charset="utf-8"/>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+		<script src="js/index.js"></script>
+		<script src="config.js"></script>
+	</head>
+	<body>
+		<img id="logo_top_img" src="https://www.bahmueller.de/typo3conf/ext/nelo_bahmueller_templates/Resources/Public/Images/bahmueller-logo.svg">
+		<div id="bottom_tabs">
+			<button class="tab_button tab_button_left active_tab" onclick="bottom_tab_click(event, 'sketch')">sketch</button>
+			<button class="tab_button tab_button_right" onclick="bottom_tab_click(event, 'prices')">prices</button>
+		</div>
+		<div id="input_div">
+			<select id="hsk_list" onchange="hsk_select_changed()"><select>
+			<div class="input_item_div" id="input_div_a">
+				<p class="input_item_title">A-Maß</p>
+			</div>
+			<div class="input_item_div">
+				<p class="input_item_title">D1</p>
+				<select id="d1_list"></select>
+			</div>
+			<div class="input_item_div" id="input_div_d2">
+				<p class="input_item_title">D2</p>
+			</div>
+		</div>
+		<div id="prices_div" class="hidden_div">
+		</div>
+		<div id="p5canvas">
+		</div>
+		<p id="version">version 0.0.1</p>
+	</body>
+</html>
